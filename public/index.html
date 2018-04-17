@@ -798,7 +798,7 @@ h2.special-quote {
   <source src="videos/leds-luke-bonaccorsi.mp4"/>
 </video>
 
-<p><a href="https://twitter.com/LukeB_UK/status/981639262746660865">Pixel Grid demo by Luke Bonaccorsi</a></p>
+<p><a href="https://twitter.com/LukeB_UK/status/981639262746660865">Pixel Grid demo</a> by <a href="https://twitter.com/LukeB_UK">Luke Bonaccorsi</a></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-20">
@@ -819,9 +819,10 @@ h2.special-quote {
 </section>
   </div>
   <div class="slide hidden" id="slide-23">
-    <section class="slide-content"><p><img src="images/muse-eeg.png" style="max-height: 70vh" alt="Muse EEG Web Bluetooth"/></p>
+    <section class="slide-content"><p><img src="images/muse-eeg.png" style="max-height: 60vh; max-width: 60%; vertical-align: middle;" alt="Muse EEG Web Bluetooth"/>
+<img src="images/muse-black.png" style="max-height: 40vh; max-width: 30%; vertical-align: middle;" alt="Muse headset"/></p>
 <p><a href="https://github.com/NeuroJS/angular-muse">github.com/NeuroJS/angular-muse</a> by <a href="https://github.com/urish">Uri Shaked</a>, <a href="https://github.com/alexcastillo">Alex Castillo</a> <a href="https://github.com/NeuroJS/angular-muse/graphs/contributors">et al</a></p>
-</section>
+<div class="credit"><a href="http://www.choosemuse.com">Muse by InteraXon</a></div></section>
   </div>
   <div class="slide hidden" id="slide-24">
     <section class="slide-content"><h2 id="central-vs-peripheral">&quot;Central&quot; vs &quot;Peripheral&quot;</h2>
@@ -849,10 +850,81 @@ h2.special-quote {
 </section>
   </div>
   <div class="slide hidden" id="slide-27">
+    <section class="slide-content"><p>TODO properties (read, write etc)</p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-28">
     <section class="slide-content"><p><img src="images/bluetooth-comms.png" alt="Bluetooth Comms" style="max-height: 80vh"/></p>
 </section>
   </div>
-  <div class="slide hidden  final-slide" id="slide-28">
+  <div class="slide hidden  bigger-code" id="slide-29">
+    <section class="slide-content"><pre><code class="lang-javascript">navigator.bluetooth.requestDevice({
+  <span class="hljs-attr">filters</span>: [
+    { <span class="hljs-attr">namePrefix</span>: <span class="hljs-string">'Travis_'</span>}
+  ],
+  <span class="hljs-attr">optionalServices</span>: [
+    <span class="hljs-comment">// Service UUIDs we want to use  </span>
+  ]
+})
+...
+</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-30">
+    <section class="slide-content"><p><img src="images/pairing-prompt-drone.png" alt="Web Bluetooth pairing prompt" style="max-height: 75vh"/></p>
+<div class="caption">Requires HTTPS and user interaction</div></section>
+  </div>
+  <div class="slide hidden" id="slide-31">
+    <section class="slide-content"><pre><code class="lang-javascript">.then(<span class="hljs-function"><span class="hljs-params">device</span> =&gt;</span> device.gatt.connect())
+.then(<span class="hljs-function"><span class="hljs-params">server</span> =&gt;</span> {
+  <span class="hljs-comment">// Get Service...</span>
+  <span class="hljs-keyword">return</span> server.getPrimaryService(myServiceUUID);
+})
+.then(<span class="hljs-function"><span class="hljs-params">service</span> =&gt;</span> {
+  <span class="hljs-comment">// Get Characteristic...</span>
+  <span class="hljs-keyword">return</span> service.getCharacteristic(myCharacteristicUUID);
+})
+...
+</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-32">
+    <section class="slide-content"><h3 id="now-we-can-e-g-read-a-value">Now we can e.g. read a value</h3>
+<pre><code class="lang-javascript">.then(<span class="hljs-function"><span class="hljs-params">characteristic</span> =&gt;</span> {
+  <span class="hljs-keyword">return</span> characteristic.readValue();
+})
+.then(<span class="hljs-function"><span class="hljs-params">value</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Value is '</span> + value.getUint8(<span class="hljs-number">0</span>));
+})
+.catch(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> { <span class="hljs-built_in">console</span>.log(error); });
+</code></pre>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-33">
+    <section class="slide-content"><p><img src="images/drone-github.png" alt="Drone code on Github" style="max-height: 70vh"/></p>
+<p><a href="https://github.com/poshaughnessy/web-bluetooth-parrot-drone">github.com/poshaughnessy/web-bluetooth-parrot-drone</a></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-34">
+    <section class="slide-content"><p>TODO Jo&#39;s Promises blog post</p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-35">
+    <section class="slide-content"><h2 id="for-fun-">For fun...</h2>
+<p><img src="images/for-fun.png" alt="Fun examples" style="max-height: 50vh"/></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-36">
+    <section class="slide-content"><h2 id="or-for-profit-">Or for profit...</h2>
+<p><img src="images/for-profit.png" alt="Bluetooth hardware" style="max-height: 50vh"/></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-37">
+    <section class="slide-content"><h2 id="what-will-you">What will you</h2>
+<h1 id="-img-src-images-create-logo-svg-style-max-width-80-alt-create-"><img src="images/create-logo.svg" style="max-width: 80%" alt="Create"/> ?</h1>
+</section>
+  </div>
+  <div class="slide hidden  final-slide" id="slide-38">
     <section class="slide-content"><h2 id="bit-ly-web-bluetooth-create18"><a href="https://bit.ly/web-bluetooth-create18">bit.ly/web-bluetooth-create18</a></h2>
 <h3 id="-poshaughnessy-br-peter-toot-cafe"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> <br/> <a href="https://toot.cafe/@peter">@peter@toot.cafe</a></h3>
 <h2 id="thanks-">Thanks! 🙏</h2>
@@ -862,6 +934,8 @@ h2.special-quote {
 
 
   <script src="lib/faye-browser-min.js"></script>
+  <script src="lib/drone-ui.js"></script>
+  <script src="lib/drone.js"></script>
   <script type="text/javascript">
     /**
  * Returns the current page number of the presentation.

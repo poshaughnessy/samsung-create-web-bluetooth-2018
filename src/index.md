@@ -155,7 +155,7 @@ Nordic Thingy
   <source src="videos/leds-luke-bonaccorsi.mp4"/>
 </video>
 
-[Pixel Grid demo by Luke Bonaccorsi](https://twitter.com/LukeB_UK/status/981639262746660865)
+[Pixel Grid demo](https://twitter.com/LukeB_UK/status/981639262746660865) by [Luke Bonaccorsi](https://twitter.com/LukeB_UK)
 
 --
 
@@ -177,9 +177,12 @@ Nordic Thingy
 
 --
 
-<img src="images/muse-eeg.png" style="max-height: 70vh" alt="Muse EEG Web Bluetooth"/>
+<img src="images/muse-eeg.png" style="max-height: 60vh; max-width: 60%; vertical-align: middle;" alt="Muse EEG Web Bluetooth"/>
+<img src="images/muse-black.png" style="max-height: 40vh; max-width: 30%; vertical-align: middle;" alt="Muse headset"/>
 
-[github.com/NeuroJS/angular-muse](https://github.com/NeuroJS/angular-muse) by [Uri Shaked](https://github.com/urish), [Alex Castillo](https://github.com/alexcastillo) [et al](https://github.com/NeuroJS/angular-muse/graphs/contributors) 
+[github.com/NeuroJS/angular-muse](https://github.com/NeuroJS/angular-muse) by [Uri Shaked](https://github.com/urish), [Alex Castillo](https://github.com/alexcastillo) [et al](https://github.com/NeuroJS/angular-muse/graphs/contributors)
+ 
+<div class="credit">[Muse by InteraXon](http://www.choosemuse.com)</div>
 
 --
 
@@ -213,7 +216,89 @@ Nordic Thingy
 
 --
 
+TODO properties (read, write etc)
+
+--
+
 <img src="images/bluetooth-comms.png" alt="Bluetooth Comms" style="max-height: 80vh"/>
+
+-- bigger-code
+
+```javascript
+navigator.bluetooth.requestDevice({
+  filters: [
+    { namePrefix: 'Travis_'}
+  ],
+  optionalServices: [
+    // Service UUIDs we want to use  
+  ]
+})
+...
+```
+
+--
+
+<img src="images/pairing-prompt-drone.png" alt="Web Bluetooth pairing prompt" style="max-height: 75vh"/>
+
+<div class="caption">Requires HTTPS and user interaction</div>
+
+--
+
+```javascript
+.then(device => device.gatt.connect())
+.then(server => {
+  // Get Service...
+  return server.getPrimaryService(myServiceUUID);
+})
+.then(service => {
+  // Get Characteristic...
+  return service.getCharacteristic(myCharacteristicUUID);
+})
+...
+```
+
+--
+
+### Now we can e.g. read a value
+
+```javascript
+.then(characteristic => {
+  return characteristic.readValue();
+})
+.then(value => {
+  console.log('Value is ' + value.getUint8(0));
+})
+.catch(error => { console.log(error); });
+```
+
+--
+
+<img src="images/drone-github.png" alt="Drone code on Github" style="max-height: 70vh"/>
+
+[github.com/poshaughnessy/web-bluetooth-parrot-drone](https://github.com/poshaughnessy/web-bluetooth-parrot-drone)
+
+--
+
+TODO Jo's Promises blog post
+
+--
+
+## For fun...
+
+<img src="images/for-fun.png" alt="Fun examples" style="max-height: 50vh"/>
+
+--
+
+## Or for profit...
+
+<img src="images/for-profit.png" alt="Bluetooth hardware" style="max-height: 50vh"/>
+
+--
+
+## What will you
+
+# <img src="images/create-logo.svg" style="max-width: 80%" alt="Create"/> ?
+
 
 -- final-slide
 
