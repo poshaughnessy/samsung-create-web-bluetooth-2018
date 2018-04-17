@@ -1,7 +1,7 @@
 title: Web Bluetooth
 output: public/index.html
 theme: peter-theme
-controls: true
+controls: false
 
 --
 
