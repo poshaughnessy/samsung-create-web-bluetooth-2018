@@ -27,7 +27,9 @@ controls: false
 
 ## Fun fact...
 
-<img src="images/bluetooth-runes.png" alt="Bluetooth runes" style="width: 70%; margin-top: 1em;"/>
+<img src="images/bluetooth-runes.png" alt="Bluetooth runes" style="max-height: 60vh; margin-top: 1em;"/>
+
+<div class="caption">Norse runes for Harald Bluetooth, King of Denmark, who united Denmark and Norway (10th century)</div>
 
 --
 
@@ -43,7 +45,7 @@ controls: false
 
 ### Born in 2016
 
-<h2 class="special-quote">"Go faster. Go further."</h2>
+<h2 class="special-quote">"Quadruple the range, double the speed"</h2>
 
 --
 
@@ -76,6 +78,8 @@ controls: false
 
 <img src="images/enterprise.png" alt="Enterprise tech" style="max-width: 60%; margin-top: 1em; vertical-align: middle;"/>
 <img src="images/iot.png" alt="IoT" style="max-width: 30%; margin-top: 1em; vertical-align: middle;"/>
+
+<div class="caption">Way finding, smart buildings, smart industry...</div>
 
 --
 
@@ -141,6 +145,20 @@ Puck.js via Web Bluetooth
 
 --
 
+<p style="margin-bottom: 0;"><img src="images/nordic-thingy.gif" style="max-height: 80vh;" alt="Nordic Thingy"/></p>
+
+Nordic Thingy
+
+--
+
+<video controls style="width: 75%">
+  <source src="videos/leds-luke-bonaccorsi.mp4"/>
+</video>
+
+[Pixel Grid demo by Luke Bonaccorsi](https://twitter.com/LukeB_UK/status/981639262746660865)
+
+--
+
 <iframe width="800px" height="550px" src="https://www.youtube.com/embed/QGb5cKL8kZ4?start=7" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 [jsyang.ca/hacks/gear-vr-rev-eng/](jsyang.ca/hacks/gear-vr-rev-eng/)
@@ -191,16 +209,10 @@ Puck.js via Web Bluetooth
 
 <img src="images/bluetooth-comms.png" alt="Bluetooth Comms" style="max-height: 80vh"/>
 
---
+-- final-slide
 
-## These slides are at:
+## [bit.ly/web-bluetooth-create18](https://bit.ly/web-bluetooth-create18)
 
-### [bit.ly/]()
-
-## I'm at:
-
-### [@poshaughnessy](https://twitter.com/poshaughnessy)
-
-### [@peter@toot.cafe](https://toot.cafe/@peter)
+### [@poshaughnessy](https://twitter.com/poshaughnessy) <br/> [@peter@toot.cafe](https://toot.cafe/@peter) 
 
 ## Thanks! 🙏

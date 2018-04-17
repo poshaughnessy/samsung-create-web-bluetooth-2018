@@ -646,3 +646,15 @@ h2.special-quote {
   color: #987fff;
 }
 
+.final-slide h2 {
+  margin-bottom: 1em;
+}
+
+.final-slide h2 a {
+  color: #fff;
+}
+
+.final-slide h3 {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}

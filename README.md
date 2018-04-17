@@ -34,5 +34,5 @@ commands!
 ## To deploy (for Peter's reference)
 
 ```
-./deploy.sh
+npm run deploy
 ```
