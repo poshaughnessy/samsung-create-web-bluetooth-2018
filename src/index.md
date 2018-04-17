@@ -173,7 +173,13 @@ Nordic Thingy
 
 <img src="images/hedgehog-curling.gif" style="max-height: 70vh" alt="Hedgehog Curling by Jo Balletti"/>
 
-[bit.ly/hedgehog-curling-by-jo](http://bit.ly/hedgehog-curling-by-jo)
+[bit.ly/hedgehog-curling](http://bit.ly/hedgehog-curling) by [Jo Balletti](https://twitter.com/thisisjofrank)
+
+--
+
+<img src="images/muse-eeg.png" style="max-height: 70vh" alt="Muse EEG Web Bluetooth"/>
+
+[github.com/NeuroJS/angular-muse](https://github.com/NeuroJS/angular-muse) by [Uri Shaked](https://github.com/urish), [Alex Castillo](https://github.com/alexcastillo) [et al](https://github.com/NeuroJS/angular-muse/graphs/contributors) 
 
 --
 
