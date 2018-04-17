@@ -193,8 +193,14 @@ Puck.js via Web Bluetooth
 
 --
 
-# Thanks! 🙏
+## These slides are at:
+
+### [bit.ly/]()
+
+## I'm at:
 
 ### [@poshaughnessy](https://twitter.com/poshaughnessy)
 
 ### [@peter@toot.cafe](https://toot.cafe/@peter)
+
+## Thanks! 🙏
