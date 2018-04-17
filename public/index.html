@@ -217,7 +217,15 @@ blockquote {
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin: 0;
+  margin: 1em 0 0 0;
+}
+
+h2 + blockquote {
+  margin-top: 2em;
+}
+
+blockquote + blockquote {
+  margin-top: 0.5em;
 }
 
 .left {
@@ -608,202 +616,45 @@ pre .xml .cdata {
   background-color: #fff;
 }
 
-.slide.bg-buzz1:before {
-  background-image: url(images/buzz-flickr_armadillo444.jpg);
-  -webkit-filter: blur(2px) grayscale(0.5) brightness(0.175);
-  filter: blur(2px) grayscale(0.5) brightness(0.175);
-}
-
-.slide.bg-buzz2:before {
-  background-image: url(images/buzz-flickr_robertmitchem.jpg);
-}
-
-.slide.bg-buzz3:before {
-  background-image: url(images/buzz-flickr_brandonserna.jpg);
-}
-
-.slide.bg-buzz4:before {
-  background-image: url(images/buzz-flickr_rafaelromero.jpg);
-}
-
-.slide.bg-buzz5:before {
-  background-image: url(images/buzz-flickr_kevinharber.jpg);
-}
-
-.slide.bg-buzz6:before {
-  background-image: url(images/buzz-flickr_payayita.jpg);
-}
-
-.slide.bg-toy-story-alien:before {
-  background-image: url(images/toy-story-alien-flickr_peterdutton.jpg);
-}
-
-.slide.bg-buzz-laser:before {
-  background-image: url(images/buzz-laser-flickr_joanne_lummy.jpg);
-}
-
-.slide.bg-buzz-nasa:before {
-  background-image: url(images/buzz-flickr-nasa.jpg);
-}
-
-.slide.bg-buzz-bye:before {
-  background-image: url(images/buzz-flickr_bridgettewynn.jpg);
-}
-
-.slide.bg-2017:before {
-  background-image: url(images/new-years-eve-1664737_1920.jpg);
-}
-
-.slide.bg-iphone-nyt:before {
-  background-image: url(images/iphone-nyt-scoble.jpg);
-}
-
-.slide.bg-outweb {
-  background-color: #fafafa;
-}
-
-.slide.bg-best-of-both:before {
-  background-image: url(images/hovis-best-of-both.jpg);
-  -webkit-filter: blur(2px) grayscale(0.5) brightness(0.125);
-  filter: blur(2px) grayscale(0.5) brightness(0.125);
-}
-
-.slide.bg-aframe:before {
-  background-color: #eee;
-  background-image: url(images/aframe-basic.png);
-  background-position-y: bottom;
-}
-
-.slide.bg-samsung-internet-for-gear-vr:before {
-  background-image: url(images/samsung-internet-gear-vr-codebar.jpg);
-}
-
-.bg-buzz-laser h4 {
-  margin-top: 1.5em;
-  font-size: 1.1em;
-}
-
-.beyond h1,
-.beyond-small h3 {
-  margin-bottom: 0;
-  line-height: 1.3em;
-}
-
-.beyond h2,
-.beyond-small h3,
-.progressive-enhancement h3 {
+h2.special-quote {
   color: #987fff;
-}
-
-.beyond-small h1 {
-  font-size: 2.5em;
-}
-
-.progressive-enhancement h2 {
-  font-size: 2.2em;
-}
-
-.progressive-enhancement h3 {
-  margin-top: 0;
-  font-size: 1.1em;
-}
-
-.progressive-enhancement h4 {
-  font-size: 1em;
-  margin: 1.5em 0 0 0;
-}
-
-.beyond h4,
-.beyond-small h4 {
-  margin-bottom: 0;
   font-style: italic;
 }
 
-.beyond h4:nth-of-type(2) {
-  margin: 0;
-}
-
-.get-involved h1 {
-  color: #987fff;
-  margin-bottom: 1em;
-}
-
-.get-involved h2 {
-  color: #fff;
-}
-
-.get-involved h4 {
-  font-style: normal;
-  margin-bottom: 0.5em;
-}
-
-.img-with-caption h4 {
-  margin-top: 0;
-}
-
-.img-with-caption p {
-  margin: 0;
-}
-
-.img-with-caption img {
-  max-height: calc(100vh - 4em);
-}
-
-.grey-out {
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
-
-.align-top .slide-content {
-  padding: 0;
-  height: 100%;
-}
-
-.align-top .slide-content img {
-  position: relative;
-  top: 0;
-}
-
-.highlight-code ul {
-  color: #aaa;
-}
-
-.highlight-code code {
-  color: #b3a0ff;
-}
-
-.manifest-code pre {
-  min-width: 60%;
-}
-
-.manifest-code .lang-json {
-  font-size: 0.9em;
-}
-
-.three-images .slide-content p img {
+.browser-logos img {
+  margin-top: 1em;
   max-width: 30%;
-  padding: 0 10px;
 }
 
-.four-images .slide-content p img {
-  max-width: 24%;
+.grid2x2 {
+  margin: 1em auto 0 auto;
+  display: inline-grid;
+  width: 70%;
+  height: 65vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
 }
 
-.beyond-browser-compare table {
-  margin: 0 auto 1em auto;
+.grid2x2 img {
+  max-height: 60%;
 }
 
-.beyond-browser-compare td {
-  text-align: center;
+.table2x2 {
+  max-height: 90vh;
+  margin: 0 auto;
 }
 
-.bg-buzz-bye h4 {
-  margin: 2em 0;
+.table2x2 img {
+  max-height: 60vh;
 }
 
-.bg-buzz-bye h3 {
-  margin-bottom: 0.5em;
+.table2x2 h4 {
+  margin: 0;
+  color: #987fff;
 }
+
+
   </style>
   <link rel="icon" href="images/favicon.png" type=”image/png">
   <link rel="manifest" href="manifest.json">
@@ -835,35 +686,142 @@ pre .xml .cdata {
 </section>
   </div>
   <div class="slide hidden" id="slide-4">
+    <section class="slide-content"><h2 id="bluetooth-low-energy-ble-">Bluetooth Low Energy (BLE)</h2>
+<h3 id="born-in-2010">Born in 2010</h3>
+<p><img src="images/gear-s3.png" alt="Gear S3" style="width: 25%; margin-top: 1em; vertical-align: middle;"/></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-5">
+    <section class="slide-content"><h2 id="bluetooth-5">Bluetooth 5</h2>
+<h3 id="born-in-2016">Born in 2016</h3>
+<h2 class="special-quote">&quot;Go faster. Go further.&quot;</h2></section>
+  </div>
+  <div class="slide hidden" id="slide-6">
+    <section class="slide-content"><h2 id="bluetooth-mesh">Bluetooth Mesh</h2>
+<blockquote>
+<p>&ldquo;Lets Bluetooth endpoints form networks among themselves, instead of having a central hub...</p>
+</blockquote>
+<blockquote>
+<p>a big advantage since it overcomes the limited range.&rdquo;</p>
+</blockquote>
+<div class="caption"><a href="https://www.networkworld.com/article/3209029/internet-of-things/bluetooth-mesh-takes-aim-at-enterprise-iot-but-hasn-t-taken-flight.html">networkworld.com</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-7">
+    <section class="slide-content"><h2 id="bluetooth-mesh">Bluetooth Mesh</h2>
+<blockquote>
+<p>&ldquo;Particularly well-suited for... building automation, smart lighting, beacons &amp; ...industrial IoT&rdquo;</p>
+</blockquote>
+<div class="caption"><a href="https://www.networkworld.com/article/3209029/internet-of-things/bluetooth-mesh-takes-aim-at-enterprise-iot-but-hasn-t-taken-flight.html">Andrew Zigani, ABI Research</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-8">
     <section class="slide-content"><h2 id="consumer-electronics">Consumer electronics</h2>
 <p><img src="images/bluetooth-samsung-phone.png" alt="Bluetooth logo" style="width: 30%; margin-top: 1em; vertical-align: middle;"/>
 <img src="images/bluetooth-speaker.png" alt="Bluetooth speaker" style="width: 30%; margin-top: 1em; vertical-align: middle;"/></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-5">
+  <div class="slide hidden" id="slide-9">
+    <section class="slide-content"><h2 id="enterprise-iot">Enterprise IoT</h2>
+<p><img src="images/enterprise.png" alt="Enterprise tech" style="max-width: 60%; margin-top: 1em; vertical-align: middle;"/>
+<img src="images/iot.png" alt="IoT" style="max-width: 30%; margin-top: 1em; vertical-align: middle;"/></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-10">
     <section class="slide-content"><h2 id="smart-everything">Smart <em>everything</em></h2>
 <p><img src="images/kickstarter.png" alt="Kickstarter" style="width: 80%;"/></p>
 <div class="caption">Kickstarter.com</div></section>
   </div>
-  <div class="slide hidden" id="slide-6">
+  <div class="slide hidden" id="slide-11">
     <section class="slide-content"><h1 id="10-million">10 million</h1>
 <h3 id="bluetooth-enabled-devices-shipping-every-day">Bluetooth enabled devices shipping every day</h3>
 <div class="caption">Source: ABI Research, via <a href="https://www.youtube.com/watch?v=-xtbTdOMqcg">Martin Woolley</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-7">
-    <section class="slide-content"><h2 id="bluetooth-low-energy-ble-">Bluetooth Low Energy (BLE)</h2>
-</section>
+  <div class="slide hidden" id="slide-12">
+    <section class="slide-content"><h2 id="what-about-the-web-">What about the Web?</h2>
+<blockquote>
+<p>&ldquo;The web browser is arguably the most important of all platforms, especially for enterprise applications&rdquo;</p>
+</blockquote>
+<div class="caption"><a href="https://medium.com/samsung-internet-dev/lets-connect-with-samsung-internet-v6-4-stable-1f197d43a812">Martin Woolley, Bluetooth SIG</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-8">
-    <section class="slide-content"><h2 id="bluetooth-5">Bluetooth 5</h2>
-<p>&quot;Go faster. Go further.&quot;</p>
-</section>
-  </div>
-  <div class="slide hidden" id="slide-9">
+  <div class="slide hidden" id="slide-13">
     <section class="slide-content"><h2 id="web-bluetooth">Web Bluetooth</h2>
+<p><img src="images/pairing-prompt-drone.png" alt="Web Bluetooth pairing prompt" style="max-height: 70vh"/></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
+  <div class="slide hidden  browser-logos" id="slide-14">
+    <section class="slide-content"><h2 id="web-bluetooth-support">Web Bluetooth support</h2>
+<p><img src="images/browsers/samsunginternet.png" alt="Samsung Internet">
+<img src="images/browsers/chrome.png" alt="Chrome">
+<img src="images/browsers/opera.png" alt="Opera"></p>
+<p>Support varies by Operating System</p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-15">
+    <section class="slide-content"><p><img src="images/polyfill.png" alt="Windows 10 Polyfill" style="max-height: 80vh"/></p>
+<div class="caption"><a href="https://github.com/urish/web-bluetooth-polyfill">github.com/urish/web-bluetooth-polyfill</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-16">
+    <section class="slide-content"><video controls style="height: 80vh">
+  <source src="videos/wb-slides.mp4"/>
+</video>
+
+<p>Slides controller</p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-17">
+    <section class="slide-content"><video controls style="width: 75%">
+  <source src="videos/puckjs-web-bluetooth.mp4"/>
+</video>
+
+<p>Puck.js via Web Bluetooth</p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-18">
+    <section class="slide-content"><iframe width="800px" height="550px" src="https://www.youtube.com/embed/QGb5cKL8kZ4?start=7" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p><a href="jsyang.ca/hacks/gear-vr-rev-eng/">jsyang.ca/hacks/gear-vr-rev-eng/</a></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-19">
+    <section class="slide-content"><iframe width="800px" height="550px" src="https://www.youtube.com/embed/Vg2e1jOug00" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p><a href="https://youtu.be/Vg2e1jOug00">youtu.be/Vg2e1jOug00</a></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-20">
+    <section class="slide-content"><p><img src="images/hedgehog-curling.gif" style="max-height: 70vh" alt="Hedgehog Curling by Jo Balletti"/></p>
+<p><a href="http://bit.ly/hedgehog-curling-by-jo">bit.ly/hedgehog-curling-by-jo</a></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-21">
+    <section class="slide-content"><h2 id="central-vs-peripheral">&quot;Central&quot; vs &quot;Peripheral&quot;</h2>
+<div class="grid2x2">
+  <div><img src="images/phone.png" alt="Phone"/><p>Central</p></div>
+  <div><img src="images/gear-s3.png" alt="Gear"/><p>Peripheral</p></div>
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-22">
+    <section class="slide-content"><h2 id="slides-controller-example">Slides controller example</h2>
+<table class="table2x2">
+  <tr>
+    <td><img src="images/phone.png" alt="Phone"/></td>
+    <td><img src="images/laptop.png" alt="Gear"/></td>
+  </tr>
+  <tr>
+    <td><h4>Central</h4><p>Web Bluetooth</p></td>
+    <td><h4>Peripheral</h4><p>Bleno (Node) &amp; Web Sockets</p></td>
+  </tr>
+</table></section>
+  </div>
+  <div class="slide hidden" id="slide-23">
+    <section class="slide-content"><h2 id="generic-attributes-gatt-">Generic Attributes (GATT)</h2>
+<p><img src="images/bluetooth-profiles-etc.png" alt="GATT" style="max-height: 70vh"/></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-24">
+    <section class="slide-content"><p><img src="images/bluetooth-comms.png" alt="Bluetooth Comms" style="max-height: 80vh"/></p>
+</section>
+  </div>
+  <div class="slide hidden" id="slide-25">
     <section class="slide-content"><h1 id="thanks-">Thanks! 🙏</h1>
 <h3 id="-poshaughnessy"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></h3>
 <h3 id="-peter-toot-cafe"><a href="https://toot.cafe/@peter">@peter@toot.cafe</a></h3>

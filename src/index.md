@@ -31,10 +31,51 @@ controls: false
 
 --
 
+## Bluetooth Low Energy (BLE)
+
+### Born in 2010
+
+<img src="images/gear-s3.png" alt="Gear S3" style="width: 25%; margin-top: 1em; vertical-align: middle;"/>
+
+--
+
+## Bluetooth 5
+
+### Born in 2016
+
+<h2 class="special-quote">"Go faster. Go further."</h2>
+
+--
+
+## Bluetooth Mesh
+
+> &ldquo;Lets Bluetooth endpoints form networks among themselves, instead of having a central hub...
+ 
+> a big advantage since it overcomes the limited range.&rdquo;
+
+<div class="caption">[networkworld.com](https://www.networkworld.com/article/3209029/internet-of-things/bluetooth-mesh-takes-aim-at-enterprise-iot-but-hasn-t-taken-flight.html)</div>
+
+--
+
+## Bluetooth Mesh
+
+> &ldquo;Particularly well-suited for... building automation, smart lighting, beacons &amp; ...industrial IoT&rdquo;
+
+<div class="caption">[Andrew Zigani, ABI Research](https://www.networkworld.com/article/3209029/internet-of-things/bluetooth-mesh-takes-aim-at-enterprise-iot-but-hasn-t-taken-flight.html)</div>
+
+--
+
 ## Consumer electronics
 
 <img src="images/bluetooth-samsung-phone.png" alt="Bluetooth logo" style="width: 30%; margin-top: 1em; vertical-align: middle;"/>
 <img src="images/bluetooth-speaker.png" alt="Bluetooth speaker" style="width: 30%; margin-top: 1em; vertical-align: middle;"/>
+
+--
+
+## Enterprise IoT
+
+<img src="images/enterprise.png" alt="Enterprise tech" style="max-width: 60%; margin-top: 1em; vertical-align: middle;"/>
+<img src="images/iot.png" alt="IoT" style="max-width: 30%; margin-top: 1em; vertical-align: middle;"/>
 
 --
 
@@ -54,17 +95,101 @@ controls: false
 
 --
 
-## Bluetooth Low Energy (BLE)
+## What about the Web?
 
---
+> &ldquo;The web browser is arguably the most important of all platforms, especially for enterprise applications&rdquo;
 
-## Bluetooth 5
-
-"Go faster. Go further."
+<div class="caption">[Martin Woolley, Bluetooth SIG](https://medium.com/samsung-internet-dev/lets-connect-with-samsung-internet-v6-4-stable-1f197d43a812)</div>
 
 --
 
 ## Web Bluetooth
+
+<img src="images/pairing-prompt-drone.png" alt="Web Bluetooth pairing prompt" style="max-height: 70vh"/>
+
+-- browser-logos
+
+## Web Bluetooth support
+
+![Samsung Internet](images/browsers/samsunginternet.png)
+![Chrome](images/browsers/chrome.png)
+![Opera](images/browsers/opera.png)
+
+Support varies by Operating System
+
+--
+
+<img src="images/polyfill.png" alt="Windows 10 Polyfill" style="max-height: 80vh"/>
+
+<div class="caption">[github.com/urish/web-bluetooth-polyfill](https://github.com/urish/web-bluetooth-polyfill)</div>
+
+--
+
+<video controls style="height: 80vh">
+  <source src="videos/wb-slides.mp4"/>
+</video>
+
+Slides controller
+
+--
+
+<video controls style="width: 75%">
+  <source src="videos/puckjs-web-bluetooth.mp4"/>
+</video>
+
+Puck.js via Web Bluetooth
+
+--
+
+<iframe width="800px" height="550px" src="https://www.youtube.com/embed/QGb5cKL8kZ4?start=7" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+[jsyang.ca/hacks/gear-vr-rev-eng/](jsyang.ca/hacks/gear-vr-rev-eng/)
+
+--
+
+<iframe width="800px" height="550px" src="https://www.youtube.com/embed/Vg2e1jOug00" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+[youtu.be/Vg2e1jOug00](https://youtu.be/Vg2e1jOug00)
+
+--
+
+<img src="images/hedgehog-curling.gif" style="max-height: 70vh" alt="Hedgehog Curling by Jo Balletti"/>
+
+[bit.ly/hedgehog-curling-by-jo](http://bit.ly/hedgehog-curling-by-jo)
+
+--
+
+## "Central" vs "Peripheral"
+
+<div class="grid2x2">
+  <div><img src="images/phone.png" alt="Phone"/><p>Central</p></div>
+  <div><img src="images/gear-s3.png" alt="Gear"/><p>Peripheral</p></div>
+</div>
+
+--
+
+## Slides controller example
+
+<table class="table2x2">
+  <tr>
+    <td><img src="images/phone.png" alt="Phone"/></td>
+    <td><img src="images/laptop.png" alt="Gear"/></td>
+  </tr>
+  <tr>
+    <td><h4>Central</h4><p>Web Bluetooth</p></td>
+    <td><h4>Peripheral</h4><p>Bleno (Node) &amp; Web Sockets</p></td>
+  </tr>
+</table>
+
+--
+
+## Generic Attributes (GATT)
+
+<img src="images/bluetooth-profiles-etc.png" alt="GATT" style="max-height: 70vh"/>
+
+--
+
+<img src="images/bluetooth-comms.png" alt="Bluetooth Comms" style="max-height: 80vh"/>
 
 --
 
