@@ -38,13 +38,17 @@ controls: false
 
 --
 
-## 
+## Smart _everything_
+ 
+<img src="images/kickstarter.png" alt="Kickstarter" style="width: 80%;"/>
+
+<div class="caption">Kickstarter.com</div>
 
 --
 
 # 10 million 
 
-## Bluetooth enabled devices shipping every day
+### Bluetooth enabled devices shipping every day
 
 <div class="caption">Source: ABI Research, via [Martin Woolley](https://www.youtube.com/watch?v=-xtbTdOMqcg)</div>
 
