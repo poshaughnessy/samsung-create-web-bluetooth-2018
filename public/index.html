@@ -321,14 +321,14 @@ pre {
 pre code {
   display: block;
   color: #444;
-  font-size: 1.7em;
+  font-size: 1.6em;
   line-height: 1.7em;
   overflow-y: hidden;
   background: transparent;
 }
 
 .bigger-code pre code {
-  font-size: 1.9em;
+  font-size: 1.8em;
 }
 
 pre .tag,
@@ -601,7 +601,7 @@ pre .xml .cdata {
 }
 
 #slide-1 .contact {
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 .create h1 {
@@ -712,7 +712,7 @@ table.characteristic td {
   color: #fff;
   border: 0;
   border-radius: 4px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: uppercase;
 }
 
@@ -730,7 +730,7 @@ table.characteristic td {
   background: #7fa1bd;
   display: block;
   width: 31%;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 #drone-demo .direction-pad > div {
@@ -1015,11 +1015,11 @@ table.characteristic td {
     <section class="slide-content"><pre><code class="lang-javascript">.then(<span class="hljs-function"><span class="hljs-params">device</span> =&gt;</span> device.gatt.connect())
 .then(<span class="hljs-function"><span class="hljs-params">server</span> =&gt;</span> {
   <span class="hljs-comment">// Get Service...</span>
-  <span class="hljs-keyword">return</span> server.getPrimaryService(myServiceUUID);
+  <span class="hljs-keyword">return</span> server.getPrimaryService(serviceUUID);
 })
 .then(<span class="hljs-function"><span class="hljs-params">service</span> =&gt;</span> {
   <span class="hljs-comment">// Get Characteristic...</span>
-  <span class="hljs-keyword">return</span> service.getCharacteristic(myCharacteristicUUID);
+  <span class="hljs-keyword">return</span> service.getCharacteristic(characteristicUUID);
 })
 ...
 </code></pre>

@@ -283,11 +283,11 @@ navigator.bluetooth.requestDevice({
 .then(device => device.gatt.connect())
 .then(server => {
   // Get Service...
-  return server.getPrimaryService(myServiceUUID);
+  return server.getPrimaryService(serviceUUID);
 })
 .then(service => {
   // Get Characteristic...
-  return service.getCharacteristic(myCharacteristicUUID);
+  return service.getCharacteristic(characteristicUUID);
 })
 ...
 ```
