@@ -308,6 +308,30 @@ navigator.bluetooth.requestDevice({
 
 --
 
+<div id="drone-demo">
+  <h1>Drone Controller</h1>
+  <button id="connectBtn">Connect</button>
+  <button id="takeOffBtn">Take off</button>
+  <div class="direction-pad">
+    <div>
+      <button id="forwardBtn" class="up">⇧</button>
+    </div>
+    <div>
+      <button id="leftBtn" class="left">⇦</button>
+      <button id="hoverBtn" class="hover">Hover</button>
+      <button id="rightBtn" class="right">⇨</button>
+    </div>
+    <div>
+      <button id="backwardBtn" class="down">⇩</button>
+    </div>
+  </div>
+  <button id="flipBtn">Flip</button>
+  <button id="landBtn">Land</button>
+  <button id="emergencyBtn" class="emergency">Emergency Land</button>
+</div>
+
+--
+
 <img src="images/drone-github.png" alt="Drone code on Github" style="max-height: 70vh"/>
 
 [github.com/poshaughnessy/web-bluetooth-parrot-drone](https://github.com/poshaughnessy/web-bluetooth-parrot-drone)

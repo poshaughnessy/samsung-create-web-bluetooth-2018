@@ -675,3 +675,88 @@ table.characteristic td {
   line-height: 1.5em;
   margin-bottom: 1.5em;
 }
+
+/* Embedded drone demo */
+
+#drone-demo {
+  font-family: 'Samsung One', Helvetica, arial, sans-serif;
+  color: #fff;
+  max-width: 800px;
+  max-height: 600px;
+  margin: 0 auto;
+}
+
+#drone-demo h1 {
+  text-align: center;
+  font-size: 1.9em;
+}
+
+#drone-demo button {
+  box-sizing: border-box;
+  width: 40%;
+  width: -webkit-calc(50% - 20px);
+  width: calc(50% - 20px);
+  height: 55px;
+  margin: 8px;
+  padding: 5px 0;
+  background: #15619b;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#drone-demo button.emergency {
+  width: 90%;
+  width: -ms-calc(100% - 19px);
+  width: calc(100% - 19px);
+  background: #dd7052;
+}
+
+#drone-demo button.up,
+#drone-demo button.left,
+#drone-demo button.right,
+#drone-demo button.down {
+  background: #7fa1bd;
+  display: block;
+  width: 31%;
+  font-size: 1.6em;
+}
+
+#drone-demo .direction-pad > div {
+  text-align: center;
+}
+
+#drone-demo button.up {
+  margin: 20px auto 0 auto;
+}
+
+#drone-demo button.down {
+  margin: 0 auto 20px auto;
+  clear: both;
+}
+
+#drone-demo button.left {
+  float: left;
+}
+
+#drone-demo button.right {
+  float: right;
+}
+
+#drone-demo button.hover {
+  width: 31%;
+  background: #7fa1bd;
+  margin: 8px 0;
+}
+
+#drone-demo p {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+#drone-demo a {
+  color: #fff;
+}
