@@ -5,31 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#987fff">
   <title>Web Bluetooth</title>
+  <link rel="stylesheet" href="fonts/fonts.css">
   <style type="text/css">
     /*
  * Originally based on github.com/sjaakvandenberg/cleaver-dark
  */
 
-/* Local fonts */
-
-@font-face {
-  font-family: 'Play';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/Play/Play-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Play';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/Play/Play-Bold.ttf') format('truetype');
-}
-
-
 /* Theme Styles */
 body {
-  font-family: 'Play', 'Helvetica', sans-serif;
+  font-family: 'Samsung One', 'Helvetica', sans-serif;
   font-size: 80%;
   text-align: center;
   overflow: hidden;
@@ -82,6 +66,11 @@ body {
 
 .no-margin {
   margin: 0;
+}
+
+.contact h3 {
+  margin-bottom: 0.5em;
+  color: #fff;
 }
 
 .contact p {
@@ -158,7 +147,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 350%;
+  font-size: 400%;
   line-height: 1.5;
 }
 
@@ -211,7 +200,6 @@ li code {
 }
 
 blockquote {
-  font-style: italic;
   font-size: 1.75em;
   display: flex;
   align-items: center;
@@ -244,11 +232,11 @@ p {
 
 a {
   text-decoration: none;
-  color: #987fff;
+  color: #2485d3;
 }
 
 a:hover {
-  color: #987fff;
+  color: #2485d3;
   text-decoration: underline;
 }
 
@@ -277,7 +265,7 @@ table th {
 .progress-bar {
   height: 3px;
   width: 0;
-  background-color: #987fff;
+  background-color: #0060ae;
   -webkit-transition: width .15s ease-out;
   -moz-transition: width .15s ease-out;
   -o-transition: width .15s ease-out;
@@ -333,10 +321,14 @@ pre {
 pre code {
   display: block;
   color: #444;
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-size: 1.7em;
+  line-height: 1.7em;
   overflow-y: hidden;
   background: transparent;
+}
+
+.bigger-code pre code {
+  font-size: 1.9em;
 }
 
 pre .tag,
@@ -350,7 +342,7 @@ pre .lisp .title,
 pre .clojure .built_in,
 pre .nginx .title,
 pre .tex .special {
-  color: #704dff;
+  color: #0060ae;
 }
 
 pre code .constant {
@@ -366,7 +358,7 @@ pre .symbol,
 pre .symbol .string,
 pre .value,
 pre .regexp {
-  color: #bf79db;
+  color: #0060ae;
 }
 
 pre .tag .value,
@@ -394,7 +386,7 @@ pre .apache .tag,
 pre .apache .cbracket,
 pre .tex .command,
 pre .prompt {
-  color: #987fff;
+  color: #0060ae;
 }
 
 pre .comment,
@@ -442,19 +434,23 @@ pre .xml .cdata {
 }
 
 .hljs-keyword {
-  color: #704dff;
+  color: #0060ae;
 }
 
 .hljs-string {
-  color: #987fff;
+  color: #0060ae;
 }
 
 .hljs-title {
-  color: #673280;
+  color: #0060ae;
 }
 
 .hljs-comment {
-  color: #777;
+  color: #7fa1bd;
+}
+
+.hljs-params {
+  color: #0060ae;
 }
 
 /* Media Queries */
@@ -604,21 +600,27 @@ pre .xml .cdata {
   font-style: italic;
 }
 
-#slide-1 h3 {
-  color: #aaa;
+#slide-1 .contact {
+  margin-top: 4em;
 }
 
-#slide-1 .contact {
-  margin-top: 6em;
+.create h1 {
+  font-family: 'Samsung One', 'Helvetica', sans-serif;
+  font-weight: normal;
+  color: #2485d3;
 }
 
 .slide.bg-white:before {
   background-color: #fff;
 }
 
-h2.special-quote {
-  color: #987fff;
-  font-style: italic;
+.special-quote {
+  font-size: 2.2em;
+  color: #2485d3;
+}
+
+span.blue {
+  color: #2485d3;
 }
 
 .browser-logos img {
@@ -651,7 +653,7 @@ h2.special-quote {
 
 .table2x2 h4 {
   margin: 0;
-  color: #987fff;
+  color: #2485d3;
 }
 
 table.characteristic {
@@ -662,6 +664,7 @@ table.characteristic {
 
 table.characteristic thead td {
   font-weight: bold;
+  color: #2485d3;
 }
 
 table.characteristic td {
@@ -694,9 +697,9 @@ table.characteristic td {
   <div class="slide" id="slide-1">
     <section class="slide-content"><h1 id="web-bluetooth">Web Bluetooth</h1>
 <h2 id="for-fun-and-profit">for Fun and Profit</h2>
-<h3 id="samsung-create-2018">Samsung Create 2018</h3>
+<p><img src="images/bluetooth-logo-cutout.png" alt="Bluetooth logo" style="width: 2em; margin-top: 1em;"/></p>
 <div class="contact">
-  <p>Peter O&#39;Shaughnessy</p>
+  <h3>Peter O&#39;Shaughnessy</h3>
   <p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
   <p><a href="https://toot.cafe/@peter">@peter@toot.cafe</a></p>
 </div></section>
@@ -715,13 +718,14 @@ table.characteristic td {
   <div class="slide hidden" id="slide-4">
     <section class="slide-content"><h2 id="bluetooth-low-energy-ble-">Bluetooth Low Energy (BLE)</h2>
 <h3 id="born-in-2010">Born in 2010</h3>
-<p><img src="images/gear-s3.png" alt="Gear S3" style="width: 25%; margin-top: 1em; vertical-align: middle;"/></p>
+<p><img src="images/gear-s3-sketch-blue.png" alt="Gear S3" style="width: 20%; margin-top: 1em; vertical-align: middle;"/></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-5">
     <section class="slide-content"><h2 id="bluetooth-5">Bluetooth 5</h2>
 <h3 id="born-in-2016">Born in 2016</h3>
-<h2 class="special-quote">&quot;Quadruple the range, double the speed&quot;</h2></section>
+<p><h3 class="special-quote">&quot;Quadruple the range, double the speed&quot;</h2></p>
+</section>
   </div>
   <div class="slide hidden" id="slide-6">
     <section class="slide-content"><h2 id="bluetooth-mesh">Bluetooth Mesh</h2>
@@ -748,14 +752,15 @@ table.characteristic td {
   </div>
   <div class="slide hidden" id="slide-9">
     <section class="slide-content"><h2 id="enterprise-iot">Enterprise IoT</h2>
-<p><img src="images/enterprise.png" alt="Enterprise tech" style="max-width: 60%; margin-top: 1em; vertical-align: middle;"/>
-<img src="images/iot.png" alt="IoT" style="max-width: 30%; margin-top: 1em; vertical-align: middle;"/></p>
+<p><img src="images/enterprise-colour-match.png" alt="Enterprise tech" style="max-width: 60%; margin-top: 1em; vertical-align: middle;"/>
+<img src="images/iot-colour-match.png" alt="IoT" style="max-width: 30%; margin-top: 1em; vertical-align: middle;"/></p>
 <div class="caption">Way finding, smart buildings, smart industry...</div></section>
   </div>
   <div class="slide hidden" id="slide-10">
     <section class="slide-content"><h2 id="smart-everything">Smart <em>everything</em></h2>
-<p><img src="images/kickstarter.png" alt="Kickstarter" style="width: 80%;"/></p>
-<div class="caption">Kickstarter.com</div></section>
+<p style="margin-bottom: 0.5em;"><img src="images/kickstarter.png" alt="Kickstarter" style="width: 80%;"/></p>
+
+<div class="caption" style="margin-top: 0;"><a href="https://kickstarter.com">kickstarter.com</a></div></section>
   </div>
   <div class="slide hidden" id="slide-11">
     <section class="slide-content"><h1 id="10-million">10 million</h1>
@@ -935,7 +940,7 @@ table.characteristic td {
 </code></pre>
 </section>
   </div>
-  <div class="slide hidden" id="slide-32">
+  <div class="slide hidden  bigger-code" id="slide-32">
     <section class="slide-content"><h3 id="now-we-can-e-g-read-a-value">Now we can e.g. read a value</h3>
 <pre><code class="lang-javascript">.then(<span class="hljs-function"><span class="hljs-params">characteristic</span> =&gt;</span> {
   <span class="hljs-keyword">return</span> characteristic.readValue();
@@ -959,21 +964,22 @@ table.characteristic td {
   </div>
   <div class="slide hidden" id="slide-35">
     <section class="slide-content"><h2 id="for-fun-">For fun...</h2>
-<p><img src="images/for-fun-sketch.png" alt="Fun examples" style="max-height: 70vh"/></p>
+<p><img src="images/for-fun-sketch-blue.png" alt="Fun examples" style="max-height: 70vh"/></p>
 </section>
   </div>
   <div class="slide hidden" id="slide-36">
     <section class="slide-content"><h2 id="or-for-profit-">Or for profit...</h2>
-<p><img src="images/for-profit-sketch.png" alt="Bluetooth hardware" style="max-height: 70vh"/></p>
+<p><img src="images/for-profit-sketch-blue.png" alt="Bluetooth hardware" style="max-height: 70vh"/></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-37">
+  <div class="slide hidden  create" id="slide-37">
     <section class="slide-content"><h2 id="what-will-you">What will you</h2>
-<h1 id="-img-src-images-create-logo-svg-style-max-width-80-alt-create-"><img src="images/create-logo.svg" style="max-width: 80%" alt="Create"/> ?</h1>
+<h1 id="-img-src-images-create-logo-blue-svg-style-max-width-80-alt-create-"><img src="images/create-logo-blue.svg" style="max-width: 80%" alt="Create"/> ?</h1>
 </section>
   </div>
   <div class="slide hidden  final-slide" id="slide-38">
-    <section class="slide-content"><h2 id="bit-ly-web-bluetooth-create18"><a href="https://bit.ly/web-bluetooth-create18">bit.ly/web-bluetooth-create18</a></h2>
+    <section class="slide-content"><h2><a href="https://bit.ly/web-bluetooth-create18">bit.ly/<span class="blue">web-bluetooth-create18</span></a></h2>
+
 <h3 id="-poshaughnessy-br-peter-toot-cafe"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> <br/> <a href="https://toot.cafe/@peter">@peter@toot.cafe</a></h3>
 <h2 id="thanks-">Thanks! 🙏</h2>
 </section>

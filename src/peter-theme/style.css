@@ -2,26 +2,9 @@
  * Originally based on github.com/sjaakvandenberg/cleaver-dark
  */
 
-/* Local fonts */
-
-@font-face {
-  font-family: 'Play';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/Play/Play-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Play';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/Play/Play-Bold.ttf') format('truetype');
-}
-
-
 /* Theme Styles */
 body {
-  font-family: 'Play', 'Helvetica', sans-serif;
+  font-family: 'Samsung One', 'Helvetica', sans-serif;
   font-size: 80%;
   text-align: center;
   overflow: hidden;
@@ -74,6 +57,11 @@ body {
 
 .no-margin {
   margin: 0;
+}
+
+.contact h3 {
+  margin-bottom: 0.5em;
+  color: #fff;
 }
 
 .contact p {
@@ -150,7 +138,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 350%;
+  font-size: 400%;
   line-height: 1.5;
 }
 
@@ -203,7 +191,6 @@ li code {
 }
 
 blockquote {
-  font-style: italic;
   font-size: 1.75em;
   display: flex;
   align-items: center;
@@ -236,11 +223,11 @@ p {
 
 a {
   text-decoration: none;
-  color: #987fff;
+  color: #2485d3;
 }
 
 a:hover {
-  color: #987fff;
+  color: #2485d3;
   text-decoration: underline;
 }
 
@@ -269,7 +256,7 @@ table th {
 .progress-bar {
   height: 3px;
   width: 0;
-  background-color: #987fff;
+  background-color: #0060ae;
   -webkit-transition: width .15s ease-out;
   -moz-transition: width .15s ease-out;
   -o-transition: width .15s ease-out;
@@ -325,10 +312,14 @@ pre {
 pre code {
   display: block;
   color: #444;
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-size: 1.7em;
+  line-height: 1.7em;
   overflow-y: hidden;
   background: transparent;
+}
+
+.bigger-code pre code {
+  font-size: 1.9em;
 }
 
 pre .tag,
@@ -342,7 +333,7 @@ pre .lisp .title,
 pre .clojure .built_in,
 pre .nginx .title,
 pre .tex .special {
-  color: #704dff;
+  color: #0060ae;
 }
 
 pre code .constant {
@@ -358,7 +349,7 @@ pre .symbol,
 pre .symbol .string,
 pre .value,
 pre .regexp {
-  color: #bf79db;
+  color: #0060ae;
 }
 
 pre .tag .value,
@@ -386,7 +377,7 @@ pre .apache .tag,
 pre .apache .cbracket,
 pre .tex .command,
 pre .prompt {
-  color: #987fff;
+  color: #0060ae;
 }
 
 pre .comment,
@@ -434,19 +425,23 @@ pre .xml .cdata {
 }
 
 .hljs-keyword {
-  color: #704dff;
+  color: #0060ae;
 }
 
 .hljs-string {
-  color: #987fff;
+  color: #0060ae;
 }
 
 .hljs-title {
-  color: #673280;
+  color: #0060ae;
 }
 
 .hljs-comment {
-  color: #777;
+  color: #7fa1bd;
+}
+
+.hljs-params {
+  color: #0060ae;
 }
 
 /* Media Queries */
@@ -596,21 +591,27 @@ pre .xml .cdata {
   font-style: italic;
 }
 
-#slide-1 h3 {
-  color: #aaa;
+#slide-1 .contact {
+  margin-top: 4em;
 }
 
-#slide-1 .contact {
-  margin-top: 6em;
+.create h1 {
+  font-family: 'Samsung One', 'Helvetica', sans-serif;
+  font-weight: normal;
+  color: #2485d3;
 }
 
 .slide.bg-white:before {
   background-color: #fff;
 }
 
-h2.special-quote {
-  color: #987fff;
-  font-style: italic;
+.special-quote {
+  font-size: 2.2em;
+  color: #2485d3;
+}
+
+span.blue {
+  color: #2485d3;
 }
 
 .browser-logos img {
@@ -643,7 +644,7 @@ h2.special-quote {
 
 .table2x2 h4 {
   margin: 0;
-  color: #987fff;
+  color: #2485d3;
 }
 
 table.characteristic {
@@ -654,6 +655,7 @@ table.characteristic {
 
 table.characteristic thead td {
   font-weight: bold;
+  color: #2485d3;
 }
 
 table.characteristic td {

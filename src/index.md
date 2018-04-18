@@ -7,10 +7,11 @@ controls: false
 
 # Web Bluetooth
 ## for Fun and Profit
-### Samsung Create 2018
+
+<img src="images/bluetooth-logo-cutout.png" alt="Bluetooth logo" style="width: 2em; margin-top: 1em;"/>
 
 <div class="contact">
-  <p>Peter O'Shaughnessy</p>
+  <h3>Peter O'Shaughnessy</h3>
   <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
   <p>[@peter@toot.cafe](https://toot.cafe/@peter)</p>
 </div>
@@ -37,7 +38,7 @@ controls: false
 
 ### Born in 2010
 
-<img src="images/gear-s3.png" alt="Gear S3" style="width: 25%; margin-top: 1em; vertical-align: middle;"/>
+<img src="images/gear-s3-sketch-blue.png" alt="Gear S3" style="width: 20%; margin-top: 1em; vertical-align: middle;"/>
 
 --
 
@@ -45,7 +46,7 @@ controls: false
 
 ### Born in 2016
 
-<h2 class="special-quote">"Quadruple the range, double the speed"</h2>
+<h3 class="special-quote">"Quadruple the range, double the speed"</h2>
 
 --
 
@@ -76,8 +77,8 @@ controls: false
 
 ## Enterprise IoT
 
-<img src="images/enterprise.png" alt="Enterprise tech" style="max-width: 60%; margin-top: 1em; vertical-align: middle;"/>
-<img src="images/iot.png" alt="IoT" style="max-width: 30%; margin-top: 1em; vertical-align: middle;"/>
+<img src="images/enterprise-colour-match.png" alt="Enterprise tech" style="max-width: 60%; margin-top: 1em; vertical-align: middle;"/>
+<img src="images/iot-colour-match.png" alt="IoT" style="max-width: 30%; margin-top: 1em; vertical-align: middle;"/>
 
 <div class="caption">Way finding, smart buildings, smart industry...</div>
 
@@ -85,9 +86,9 @@ controls: false
 
 ## Smart _everything_
  
-<img src="images/kickstarter.png" alt="Kickstarter" style="width: 80%;"/>
+<p style="margin-bottom: 0.5em;"><img src="images/kickstarter.png" alt="Kickstarter" style="width: 80%;"/></p>
 
-<div class="caption">Kickstarter.com</div>
+<div class="caption" style="margin-top: 0;">[kickstarter.com](https://kickstarter.com)</div>
 
 --
 
@@ -291,7 +292,7 @@ navigator.bluetooth.requestDevice({
 ...
 ```
 
---
+-- bigger-code
 
 ### Now we can e.g. read a value
 
@@ -321,24 +322,24 @@ navigator.bluetooth.requestDevice({
 
 ## For fun...
 
-<img src="images/for-fun-sketch.png" alt="Fun examples" style="max-height: 70vh"/>
+<img src="images/for-fun-sketch-blue.png" alt="Fun examples" style="max-height: 70vh"/>
 
 --
 
 ## Or for profit...
 
-<img src="images/for-profit-sketch.png" alt="Bluetooth hardware" style="max-height: 70vh"/>
+<img src="images/for-profit-sketch-blue.png" alt="Bluetooth hardware" style="max-height: 70vh"/>
 
---
+-- create
 
 ## What will you
 
-# <img src="images/create-logo.svg" style="max-width: 80%" alt="Create"/> ?
+# <img src="images/create-logo-blue.svg" style="max-width: 80%" alt="Create"/> ?
 
 
 -- final-slide
 
-## [bit.ly/web-bluetooth-create18](https://bit.ly/web-bluetooth-create18)
+<h2><a href="https://bit.ly/web-bluetooth-create18">bit.ly/<span class="blue">web-bluetooth-create18</span></a></h2>
 
 ### [@poshaughnessy](https://twitter.com/poshaughnessy) <br/> [@peter@toot.cafe](https://toot.cafe/@peter) 
 
