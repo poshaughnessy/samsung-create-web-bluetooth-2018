@@ -216,7 +216,41 @@ Nordic Thingy
 
 --
 
-TODO properties (read, write etc)
+<table class="characteristic">
+  <thead>
+    <tr>
+      <td>Property</td>
+      <td>Enabled</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Broadcast</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Read</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Write without response</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Write</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Notify</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Indicate</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    
 
 --
 
@@ -279,7 +313,9 @@ navigator.bluetooth.requestDevice({
 
 --
 
-TODO Jo's Promises blog post
+<img src="images/promises-promises.png" alt="Jo's blog post on Promises" style="max-height: 70vh"/>
+
+[medium.com/samsung-internet-dev/promises-promises-c91d454aea11](https://medium.com/samsung-internet-dev/promises-promises-c91d454aea11)
 
 --
 

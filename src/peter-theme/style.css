@@ -646,6 +646,21 @@ h2.special-quote {
   color: #987fff;
 }
 
+table.characteristic {
+  margin: 0 auto;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table.characteristic thead td {
+  font-weight: bold;
+}
+
+table.characteristic td {
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+}
+
 .final-slide h2 {
   margin-bottom: 1em;
 }
