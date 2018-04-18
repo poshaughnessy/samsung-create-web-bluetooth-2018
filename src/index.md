@@ -285,13 +285,13 @@ TODO Jo's Promises blog post
 
 ## For fun...
 
-<img src="images/for-fun.png" alt="Fun examples" style="max-height: 50vh"/>
+<img src="images/for-fun-sketch.png" alt="Fun examples" style="max-height: 70vh"/>
 
 --
 
 ## Or for profit...
 
-<img src="images/for-profit.png" alt="Bluetooth hardware" style="max-height: 50vh"/>
+<img src="images/for-profit-sketch.png" alt="Bluetooth hardware" style="max-height: 70vh"/>
 
 --
 
