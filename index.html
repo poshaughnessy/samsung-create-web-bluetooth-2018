@@ -685,6 +685,91 @@ table.characteristic td {
   margin-bottom: 1.5em;
 }
 
+/* Embedded drone demo */
+
+#drone-demo {
+  font-family: 'Samsung One', Helvetica, arial, sans-serif;
+  color: #fff;
+  max-width: 800px;
+  max-height: 600px;
+  margin: 0 auto;
+}
+
+#drone-demo h1 {
+  text-align: center;
+  font-size: 1.9em;
+}
+
+#drone-demo button {
+  box-sizing: border-box;
+  width: 40%;
+  width: -webkit-calc(50% - 20px);
+  width: calc(50% - 20px);
+  height: 55px;
+  margin: 8px;
+  padding: 5px 0;
+  background: #15619b;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#drone-demo button.emergency {
+  width: 90%;
+  width: -ms-calc(100% - 19px);
+  width: calc(100% - 19px);
+  background: #dd7052;
+}
+
+#drone-demo button.up,
+#drone-demo button.left,
+#drone-demo button.right,
+#drone-demo button.down {
+  background: #7fa1bd;
+  display: block;
+  width: 31%;
+  font-size: 1.6em;
+}
+
+#drone-demo .direction-pad > div {
+  text-align: center;
+}
+
+#drone-demo button.up {
+  margin: 20px auto 0 auto;
+}
+
+#drone-demo button.down {
+  margin: 0 auto 20px auto;
+  clear: both;
+}
+
+#drone-demo button.left {
+  float: left;
+}
+
+#drone-demo button.right {
+  float: right;
+}
+
+#drone-demo button.hover {
+  width: 31%;
+  background: #7fa1bd;
+  margin: 8px 0;
+}
+
+#drone-demo p {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+#drone-demo a {
+  color: #fff;
+}
+
   </style>
   <link rel="icon" href="images/bluetooth-icon.png" type=”image/png">
   <link rel="manifest" href="manifest.json">
@@ -953,31 +1038,54 @@ table.characteristic td {
 </section>
   </div>
   <div class="slide hidden" id="slide-33">
+    <section class="slide-content"><div id="drone-demo">
+  <h1>Drone Controller</h1>
+  <button id="connectBtn">Connect</button>
+  <button id="takeOffBtn">Take off</button>
+  <div class="direction-pad">
+    <div>
+      <button id="forwardBtn" class="up">⇧</button>
+    </div>
+    <div>
+      <button id="leftBtn" class="left">⇦</button>
+      <button id="hoverBtn" class="hover">Hover</button>
+      <button id="rightBtn" class="right">⇨</button>
+    </div>
+    <div>
+      <button id="backwardBtn" class="down">⇩</button>
+    </div>
+  </div>
+  <button id="flipBtn">Flip</button>
+  <button id="landBtn">Land</button>
+  <button id="emergencyBtn" class="emergency">Emergency Land</button>
+</div></section>
+  </div>
+  <div class="slide hidden" id="slide-34">
     <section class="slide-content"><p><img src="images/drone-github.png" alt="Drone code on Github" style="max-height: 70vh"/></p>
 <p><a href="https://github.com/poshaughnessy/web-bluetooth-parrot-drone">github.com/poshaughnessy/web-bluetooth-parrot-drone</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-34">
+  <div class="slide hidden" id="slide-35">
     <section class="slide-content"><p><img src="images/promises-promises.png" alt="Jo's blog post on Promises" style="max-height: 70vh"/></p>
 <p><a href="https://medium.com/samsung-internet-dev/promises-promises-c91d454aea11">medium.com/samsung-internet-dev/promises-promises-c91d454aea11</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-35">
+  <div class="slide hidden" id="slide-36">
     <section class="slide-content"><h2 id="for-fun-">For fun...</h2>
 <p><img src="images/for-fun-sketch-blue.png" alt="Fun examples" style="max-height: 70vh"/></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-36">
+  <div class="slide hidden" id="slide-37">
     <section class="slide-content"><h2 id="or-for-profit-">Or for profit...</h2>
 <p><img src="images/for-profit-sketch-blue.png" alt="Bluetooth hardware" style="max-height: 70vh"/></p>
 </section>
   </div>
-  <div class="slide hidden  create" id="slide-37">
+  <div class="slide hidden  create" id="slide-38">
     <section class="slide-content"><h2 id="what-will-you">What will you</h2>
 <h1 id="-img-src-images-create-logo-blue-svg-style-max-width-80-alt-create-"><img src="images/create-logo-blue.svg" style="max-width: 80%" alt="Create"/> ?</h1>
 </section>
   </div>
-  <div class="slide hidden  final-slide" id="slide-38">
+  <div class="slide hidden  final-slide" id="slide-39">
     <section class="slide-content"><h2><a href="https://bit.ly/web-bluetooth-create18">bit.ly/<span class="blue">web-bluetooth-create18</span></a></h2>
 
 <h3 id="-poshaughnessy-br-peter-toot-cafe"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a> <br/> <a href="https://toot.cafe/@peter">@peter@toot.cafe</a></h3>
@@ -988,8 +1096,8 @@ table.characteristic td {
 
 
   <script src="lib/faye-browser-min.js"></script>
-  <script src="lib/drone-ui.js"></script>
   <script src="lib/drone.js"></script>
+  <script src="lib/drone-ui.js"></script>
   <script type="text/javascript">
     /**
  * Returns the current page number of the presentation.
