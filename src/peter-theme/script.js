@@ -178,7 +178,9 @@ document.body.addEventListener('touchend', function(e) {
 /**
  * Web Sockets (Faye) added by Peter - for remote control
  * For running locally only
+ * Removed for now!
  */
+/*
 if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
   var wsClient = new Faye.Client('http://localhost:9000/ws');
 
@@ -200,7 +202,7 @@ if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
     }
   });
 }
-
+*/
 
 /* Service worker registration - added by Peter */
 // TODO removed for now
