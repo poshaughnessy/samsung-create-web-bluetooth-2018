@@ -82,21 +82,17 @@ controls: false
 
 <div class="caption">[Andrew Zigani, ABI Research](https://www.networkworld.com/article/3209029/internet-of-things/bluetooth-mesh-takes-aim-at-enterprise-iot-but-hasn-t-taken-flight.html)</div>
 
---
-
-## Consumer electronics
-
-<img src="images/bluetooth-samsung-phone.png" alt="Bluetooth logo" style="width: 30%; margin-top: 1em; vertical-align: middle;"/>
-<img src="images/bluetooth-speaker.png" alt="Bluetooth speaker" style="width: 30%; margin-top: 1em; vertical-align: middle;"/>
+<!-- -- -->
+<!--## Consumer electronics-->
+<!--<img src="images/bluetooth-samsung-phone.png" alt="Bluetooth logo" style="width: 30%; margin-top: 1em; vertical-align: middle;"/>-->
+<!--<img src="images/bluetooth-speaker.png" alt="Bluetooth speaker" style="width: 30%; margin-top: 1em; vertical-align: middle;"/>-->
 
 --
 
-## Enterprise IoT
+## Way finding, smart buildings, smart industry...
 
 <img src="images/enterprise-colour-match.png" alt="Enterprise tech" style="max-width: 60%; margin-top: 1em; vertical-align: middle;"/>
 <img src="images/iot-colour-match.png" alt="IoT" style="max-width: 30%; margin-top: 1em; vertical-align: middle;"/>
-
-<div class="caption">Way finding, smart buildings, smart industry...</div>
 
 --
 
