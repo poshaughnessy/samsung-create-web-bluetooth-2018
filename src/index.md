@@ -20,9 +20,11 @@ controls: false
 
 ## Bluetooth
 
-### Born in 1994
+<img src="images/for-profit-sketch-blue.png" alt="Bluetooth hardware" style="max-height: 70vh"/>
 
-<img src="images/bluetooth-logo.png" alt="Bluetooth logo" style="width: 20%; margin-top: 1em;"/>
+--
+
+<p style="margin-bottom: 0.5em;"><img src="images/bluetooth-treasure.png" alt="Bluetooth logo" style="width: 85vh;"/></p><div class="caption">[dw.com](http://www.dw.com/en/bluetooth-treasure-found-on-german-baltic-sea-island/a-43403908)</div>
 
 --
 
@@ -30,33 +32,47 @@ controls: false
 
 <img src="images/bluetooth-runes.png" alt="Bluetooth runes" style="max-height: 60vh; margin-top: 1em;"/>
 
-<div class="caption">Norse runes for Harald Bluetooth, King of Denmark, who united Denmark and Norway (10th century)</div>
+<div class="caption">Norse runes for Harald Bluetooth, King of Denmark, who united Denmark and Norway</div>
+
+--
+
+## Bluetooth
+
+### Established 1998*
+
+<img src="images/bluetooth-logo.png" alt="Bluetooth logo" style="width: 20%; margin-top: 1em;"/>
+
+<div class="caption">*[Bluetooth SIG formed. First headsets &amp; phones shipped in 2000.](http://bluetoothstudio.com/history-of-bluetooth/).</div>
 
 --
 
 ## Bluetooth Low Energy (BLE)
 
-### Born in 2010
+### Established 2010*
 
 <img src="images/gear-s3-sketch-blue.png" alt="Gear S3" style="width: 20%; margin-top: 1em; vertical-align: middle;"/>
+
+<div class="caption">*[Spec completed. First introduced in smartphones in 2011.](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy#History)</div>
 
 --
 
 ## Bluetooth 5
 
-### Born in 2016
+### Established 2016*
 
 <h3 class="special-quote">"Quadruple the range, double the speed"</h2>
+
+<div class="caption">*[Unveiled in 2016. Galaxy S8 first phone to introduce in 2017.](https://en.wikipedia.org/wiki/Bluetooth#Bluetooth_5)</div>
 
 --
 
 ## Bluetooth Mesh
 
-> &ldquo;Lets Bluetooth endpoints form networks among themselves, instead of having a central hub...
- 
-> a big advantage since it overcomes the limited range.&rdquo;
+### Adopted in 2017*
 
-<div class="caption">[networkworld.com](https://www.networkworld.com/article/3209029/internet-of-things/bluetooth-mesh-takes-aim-at-enterprise-iot-but-hasn-t-taken-flight.html)</div>
+> &ldquo;Lets Bluetooth endpoints form networks among themselves, instead of having a central hub... a big advantage since it overcomes the limited range.&rdquo;
+
+<div class="caption">[networkworld.com](https://www.networkworld.com/article/3209029/internet-of-things/bluetooth-mesh-takes-aim-at-enterprise-iot-but-hasn-t-taken-flight.html) *[wikipedia.org](https://en.wikipedia.org/wiki/Bluetooth_mesh_networking#cite_note-2)</div>
 
 --
 
