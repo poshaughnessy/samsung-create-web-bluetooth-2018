@@ -655,12 +655,15 @@ table.characteristic {
 
 table.characteristic thead td {
   font-weight: bold;
-  color: #2485d3;
+  background-color: #b4b4b4;
 }
 
 table.characteristic td {
-  border: 1px solid #ccc;
+  border: 1px solid #8d8d8d;
   padding: 0.5em 1em;
+  background-color: #e6e6e6;
+  color: #3d3d3d;
+  text-shadow: none;
 }
 
 .final-slide h2 {

@@ -98,7 +98,7 @@ controls: false
 
 ## Smart _everything_
  
-<p style="margin-bottom: 0.5em;"><img src="images/kickstarter.png" alt="Kickstarter" style="width: 80%;"/></p>
+<p style="margin-bottom: 0.5em;"><img src="images/kickstarter2.png" alt="Kickstarter" style="width: 80%;"/></p>
 
 <div class="caption" style="margin-top: 0;">[kickstarter.com](https://kickstarter.com)</div>
 
@@ -120,6 +120,14 @@ controls: false
 
 --
 
+## "Everything is just a tap away"
+
+<img src="images/closeby-crop.png" alt="Closeby" style="max-height: 60vh; vertical-align:middle; margin-right: 1.5em;"/><img src="images/closeby-notification.png" alt="Closeby notification" style="max-height: 60vh; vertical-align:middle;"/>
+
+<div class="caption">[CloseBy](https://samsunginter.net/docs/closeby) - [Physical Web](https://google.github.io/physical-web/)</div>
+
+--
+
 ## Web Bluetooth
 
 <img src="images/pairing-prompt-drone.png" alt="Web Bluetooth pairing prompt" style="max-height: 70vh"/>
@@ -132,7 +140,7 @@ controls: false
 ![Chrome](images/browsers/chrome.png)
 ![Opera](images/browsers/opera.png)
 
-Support varies by Operating System
+[Support on Android, Mac, Linux and Chrome OS](https://github.com/WebBluetoothCG/web-bluetooth/blob/gh-pages/implementation-status.md)
 
 --
 
@@ -160,7 +168,7 @@ Puck.js via Web Bluetooth
 
 <p style="margin-bottom: 0;"><img src="images/nordic-thingy.gif" style="max-height: 80vh;" alt="Nordic Thingy"/></p>
 
-Nordic Thingy
+Nordic Thingy:52
 
 --
 
@@ -223,11 +231,13 @@ Nordic Thingy
 
 --
 
-## Generic Attributes (GATT)
+### Generic Attributes (GATT)
 
-<img src="images/bluetooth-profiles-etc.png" alt="GATT" style="max-height: 70vh"/>
+<img src="images/gatt.png" alt="GATT" style="max-height: 75vh"/>
 
 --
+
+### Characteristic properties
 
 <table class="characteristic">
   <thead>
