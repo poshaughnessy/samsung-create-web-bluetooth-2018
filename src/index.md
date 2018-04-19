@@ -354,6 +354,14 @@ navigator.bluetooth.requestDevice({
 
 --
 
+### In case of demo fail
+
+<video controls style="height: 70vh">
+  <source src="videos/webdrone-v1-1.mp4"/>
+</video>
+
+--
+
 <img src="images/drone-github.png" alt="Drone code on Github" style="max-height: 70vh"/>
 
 [github.com/poshaughnessy/web-bluetooth-parrot-drone](https://github.com/poshaughnessy/web-bluetooth-parrot-drone)
