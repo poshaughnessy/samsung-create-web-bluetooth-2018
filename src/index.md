@@ -337,19 +337,11 @@ navigator.bluetooth.requestDevice({
   <h1>Drone Controller</h1>
   <button id="connectBtn">Connect</button>
   <button id="takeOffBtn">Take off</button>
-  <div class="direction-pad">
-    <div>
-      <button id="forwardBtn" class="up">⇧</button>
-    </div>
-    <div>
-      <button id="leftBtn" class="left">⇦</button>
-      <button id="hoverBtn" class="hover">Hover</button>
-      <button id="rightBtn" class="right">⇨</button>
-    </div>
-    <div>
-      <button id="backwardBtn" class="down">⇩</button>
-    </div>
-  </div>
+  <button id="forwardBtn" class="up">⇧</button>
+  <button id="leftBtn" class="left">⇦</button>
+  <button id="hoverBtn" class="hover">Hover</button>
+  <button id="rightBtn" class="right">⇨</button>
+  <button id="backwardBtn" class="down">⇩</button>
   <button id="flipBtn">Flip</button>
   <button id="landBtn">Land</button>
   <button id="emergencyBtn" class="emergency">Emergency Land</button>
