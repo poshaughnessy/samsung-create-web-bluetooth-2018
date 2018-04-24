@@ -1,8 +1,11 @@
 title: Web Bluetooth
+description: "Web Bluetooth for Fun and Profit" by Peter O'Shaughnessy
 output: public/index.html
 theme: peter-theme
 controls: true
-
+themecolour: 222222
+url: https://poshaughnessy.github.io/samsung-create-web-bluetooth-2018/
+image: https://poshaughnessy.github.io/samsung-create-web-bluetooth-2018/images/preview.jpg
 --
 
 # Web Bluetooth
