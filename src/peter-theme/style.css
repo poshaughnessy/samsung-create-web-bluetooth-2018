@@ -599,6 +599,7 @@ pre .xml .cdata {
   font-family: 'Samsung One', 'Helvetica', sans-serif;
   font-weight: normal;
   color: #2485d3;
+  text-shadow: none;
 }
 
 .slide.bg-white:before {

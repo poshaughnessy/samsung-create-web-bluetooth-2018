@@ -334,7 +334,7 @@ navigator.bluetooth.requestDevice({
 --
 
 <div id="drone-demo">
-  <h1>Drone Controller</h1>
+  <h1>Drone Controller (live demo)</h1>
   <button id="connectBtn">Connect</button>
   <button id="takeOffBtn">Take off</button>
   <button id="forwardBtn" class="up">⇧</button>
@@ -349,7 +349,7 @@ navigator.bluetooth.requestDevice({
 
 --
 
-### In case of demo fail
+### Here's one I recorded earlier!
 
 <video controls style="height: 70vh">
   <source src="videos/webdrone-v1-1.mp4"/>
