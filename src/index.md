@@ -32,7 +32,7 @@ controls: true
 
 <img src="images/bluetooth-runes.png" alt="Bluetooth runes" style="max-height: 60vh; margin-top: 1em;"/>
 
-<div class="caption">Norse runes for Harald Bluetooth, King of Denmark, who united Denmark and Norway</div>
+<div class="caption">Norse runes for Harald Bluetooth, 10th century King of Denmark</div>
 
 --
 
