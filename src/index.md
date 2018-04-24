@@ -334,7 +334,7 @@ navigator.bluetooth.requestDevice({
 --
 
 <div id="drone-demo">
-  <h1>Drone Controller (live demo)</h1>
+  <h1>Drone Demo</h1>
   <button id="connectBtn">Connect</button>
   <button id="takeOffBtn">Take off</button>
   <button id="forwardBtn" class="up">⇧</button>

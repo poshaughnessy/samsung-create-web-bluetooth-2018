@@ -691,8 +691,8 @@ table.characteristic td {
 #drone-demo {
   font-family: 'Samsung One', Helvetica, arial, sans-serif;
   color: #fff;
-  max-width: 800px;
-  max-height: 600px;
+  max-width: 80%;
+  max-height: 80vh;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -704,8 +704,14 @@ table.characteristic td {
     '. . down down . .'
     'flip flip flip land land land'
     'emergency emergency emergency emergency emergency emergency';
-  grid-row-gap: 10px;
+  grid-row-gap: 5px;
   grid-column-gap: 15px;
+}
+
+@media (min-width: 1000px) {
+  #drone-demo {
+    max-width: 800px;
+  }
 }
 
 #drone-demo h1 {
