@@ -1,5 +1,5 @@
 title: Web Bluetooth
-description: "Web Bluetooth for Fun and Profit" by Peter O'Shaughnessy
+description: &ldquo;Web Bluetooth for Fun and Profit&rdquo; by Peter O&lsquo;Shaughnessy
 output: public/index.html
 theme: peter-theme
 controls: true
