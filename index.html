@@ -321,14 +321,14 @@ pre {
 pre code {
   display: block;
   color: #444;
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 1.7em;
   overflow-y: hidden;
   background: transparent;
 }
 
 .bigger-code pre code {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 pre .tag,
@@ -696,20 +696,29 @@ table.characteristic td {
   max-width: 800px;
   max-height: 600px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas: 'header header header header header header'
+    'connect connect connect takeoff takeoff takeoff'
+    '. . up up . .'
+    'left left hover hover right right'
+    '. . down down . .'
+    'flip flip flip land land land'
+    'emergency emergency emergency emergency emergency emergency';
+  grid-row-gap: 10px;
+  grid-column-gap: 15px;
 }
 
 #drone-demo h1 {
+  grid-area: header;
   text-align: center;
   font-size: 1.9em;
 }
 
 #drone-demo button {
-  box-sizing: border-box;
-  width: 40%;
-  width: -webkit-calc(50% - 20px);
-  width: calc(50% - 20px);
+  width: 100%;
   height: 55px;
-  margin: 8px;
   padding: 5px 0;
   background: #15619b;
   color: #fff;
@@ -720,10 +729,25 @@ table.characteristic td {
 }
 
 #drone-demo button.emergency {
-  width: 90%;
-  width: -ms-calc(100% - 19px);
-  width: calc(100% - 19px);
+  grid-area: emergency;
+  width: 100%;
   background: #dd7052;
+}
+
+#connectBtn {
+  grid-area: connect;
+}
+
+#takeOffBtn {
+  grid-area: takeoff;
+}
+
+#flipBtn {
+  grid-area: flip;
+}
+
+#landBtn {
+  grid-area: land;
 }
 
 #drone-demo button.up,
@@ -732,7 +756,6 @@ table.characteristic td {
 #drone-demo button.down {
   background: #7fa1bd;
   display: block;
-  width: 31%;
   font-size: 1.4em;
 }
 
@@ -741,36 +764,24 @@ table.characteristic td {
 }
 
 #drone-demo button.up {
-  margin: 20px auto 0 auto;
+  grid-area: up;
 }
 
 #drone-demo button.down {
-  margin: 0 auto 20px auto;
-  clear: both;
+  grid-area: down;
 }
 
 #drone-demo button.left {
-  float: left;
+  grid-area: left;
 }
 
 #drone-demo button.right {
-  float: right;
+  grid-area: right;
 }
 
 #drone-demo button.hover {
-  width: 31%;
+  grid-area: hover;
   background: #7fa1bd;
-  margin: 8px 0;
-}
-
-#drone-demo p {
-  margin-top: 10px;
-  text-align: center;
-  color: #fff;
-}
-
-#drone-demo a {
-  color: #fff;
 }
 
   </style>
@@ -1060,19 +1071,11 @@ table.characteristic td {
   <h1>Drone Controller</h1>
   <button id="connectBtn">Connect</button>
   <button id="takeOffBtn">Take off</button>
-  <div class="direction-pad">
-    <div>
-      <button id="forwardBtn" class="up">⇧</button>
-    </div>
-    <div>
-      <button id="leftBtn" class="left">⇦</button>
-      <button id="hoverBtn" class="hover">Hover</button>
-      <button id="rightBtn" class="right">⇨</button>
-    </div>
-    <div>
-      <button id="backwardBtn" class="down">⇩</button>
-    </div>
-  </div>
+  <button id="forwardBtn" class="up">⇧</button>
+  <button id="leftBtn" class="left">⇦</button>
+  <button id="hoverBtn" class="hover">Hover</button>
+  <button id="rightBtn" class="right">⇨</button>
+  <button id="backwardBtn" class="down">⇩</button>
   <button id="flipBtn">Flip</button>
   <button id="landBtn">Land</button>
   <button id="emergencyBtn" class="emergency">Emergency Land</button>
