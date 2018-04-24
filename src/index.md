@@ -1,7 +1,7 @@
 title: Web Bluetooth
 output: public/index.html
 theme: peter-theme
-controls: false
+controls: true
 
 --
 
@@ -152,6 +152,7 @@ controls: false
 
 <video controls style="height: 80vh">
   <source src="videos/wb-slides.mp4"/>
+  <source src="videos/wb-slides.webm"/>
 </video>
 
 Slides controller
@@ -160,6 +161,7 @@ Slides controller
 
 <video controls style="width: 75%">
   <source src="videos/puckjs-web-bluetooth.mp4"/>
+  <source src="videos/puckjs-web-bluetooth.webm"/>
 </video>
 
 Puck.js via Web Bluetooth
@@ -174,6 +176,7 @@ Nordic Thingy:52
 
 <video controls style="width: 75%">
   <source src="videos/leds-luke-bonaccorsi.mp4"/>
+  <source src="videos/leds-luke-bonaccorsi.webm"/>
 </video>
 
 [Pixel Grid demo](https://twitter.com/LukeB_UK/status/981639262746660865) by [Luke Bonaccorsi](https://twitter.com/LukeB_UK)
@@ -358,6 +361,7 @@ navigator.bluetooth.requestDevice({
 
 <video controls style="height: 70vh">
   <source src="videos/webdrone-v1-1.mp4"/>
+  <source src="videos/webdrone-v1-1.webm"/>
 </video>
 
 --
