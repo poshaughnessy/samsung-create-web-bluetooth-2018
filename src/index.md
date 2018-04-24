@@ -122,7 +122,7 @@ controls: true
 
 ## "Everything is just a tap away"
 
-<img src="images/closeby-crop.png" alt="Closeby" style="max-height: 60vh; max-width: 25%; vertical-align:middle; margin-right: 1.5em;"/><img src="images/closeby-notification.png" alt="Closeby notification" style="max-height: 60vh; max-width: 25%; vertical-align:middle;"/>
+<img src="images/closeby-crop.png" alt="Closeby" style="max-height: 60vh; max-width: 35%; vertical-align:middle; margin-right: 1.5em;"/><img src="images/closeby-notification.png" alt="Closeby notification" style="max-height: 60vh; max-width: 35%; vertical-align:middle;"/>
 
 <div class="caption">[CloseBy](https://samsunginter.net/docs/closeby) - [Physical Web](https://google.github.io/physical-web/)</div>
 
